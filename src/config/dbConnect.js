@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-mongoose.connect("string de conexão ao banco")
+mongoose.connect("mongodb+srv://schmidtsistemasintegrados:ribeiromaquinas123@ribeiromaquinas.dpm58pm.mongodb.net/")
 
 let db = mongoose.connection;
 
