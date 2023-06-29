@@ -1,6 +1,8 @@
 import mongoose from "mongoose";
+import dotenv from 'dotenv';
+dotenv.config()
 
-mongoose.connect("mongodb+srv://schmidtsistemasintegrados:ribeiromaquinas123@ribeiromaquinas.dpm58pm.mongodb.net/")
+mongoose.connect(`${process.env.MONGO_STRING}`)
 
 let db = mongoose.connection;
 
