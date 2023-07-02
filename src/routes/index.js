@@ -4,7 +4,7 @@ import cadastroclientes from "./cadastroClienteRoutes.js";
 
 const routes = (app) => {
     app.route('/').get((req, res) => {
-        res.status(200).send({titulo: "curso de node111112"})
+        res.status(200).send({titulo: "curso de node"})
     })
 
 

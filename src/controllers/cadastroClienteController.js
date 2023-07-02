@@ -3,7 +3,7 @@ import cadastroCliente from "../models/CadastroClienteModel.js";
 class CadastroClienteController {
 
 static ListarCadastroCliente = (req, res) => {
-    cadastroClienpte.find((err, cadastroCliente)=>{
+    cadastroCliente.find((err, cadastroCliente)=>{
     res.status(200).json(cadastroCliente)
 }).sort({_id: -1})
 }
