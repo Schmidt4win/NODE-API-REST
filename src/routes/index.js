@@ -1,6 +1,5 @@
 import  express from "express";
-import cadastroclientes from "./cadastroClienteRoutes.js";
-import talao from "./talaoRoutes.js"
+import users from "./userRoutes.js"
 
 
 const routes = (app) => {
@@ -11,8 +10,7 @@ const routes = (app) => {
 
    app.use(
      express.json(),
-     cadastroclientes,
-     talao
+     users,
     )
 }
 
