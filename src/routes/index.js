@@ -1,6 +1,8 @@
 import  express from "express";
 import users from "./userRoutes.js"
-
+import cto from "./ctoRoutes.js"
+import evento from "./eventoRoutes.js"
+import rota from "./rotaRoutes.js"
 
 const routes = (app) => {
     app.route('/').get((req, res) => {
@@ -11,6 +13,9 @@ const routes = (app) => {
    app.use(
      express.json(),
      users,
+     cto,
+     evento,
+     rota
     )
 }
 
